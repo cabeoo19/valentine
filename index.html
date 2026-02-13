@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#E63946" />
+    <title>Valentine — Cute Red</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" as="image" href="assets/heart-loop.svg" />
+    <link rel="preload" as="image" href="assets/bag.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#section-1">Skip to content</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="bg__glow"></div>
+      <div class="bg__dots"></div>
+    </div>
+
+    <canvas id="fx" class="fx" aria-hidden="true"></canvas>
+
+    <main class="snap" aria-label="Valentine single page">
+      <!-- Section 1: Chocolate box -->
+      <section
+        id="section-1"
+        class="panel panel--choco"
+        aria-label="Hộp socola"
+      >
+        <header class="panel__header">
+          <p class="badge">Valentine 💝 mapp & beoo</p>
+          <h1 class="title">Hộp socola cua Quanh</h1>
+          <p class="subtitle">
+            Chọn một viên bất kỳ ... Ăn hết cái đống nàyy hihi
+          </p>
+        </header>
+
+        <div class="choco">
+          <div class="choco__tray" aria-hidden="true"></div>
+          <div
+            class="choco__box"
+            role="list"
+            aria-label="Hộp socola gồm nhiều viên"
+          >
+            <!-- 10 chocolates (buttons) -->
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 1">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="0"
+                aria-label="Mở viên socola 1"
+              >
+                <span class="choco__art" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" class="icon">
+                    <path
+                      d="M32 54s-18-10.5-24-22C1.8 18.7 10.2 10 20 14.3c4.2 1.8 7.2 6 12 11.2 4.8-5.2 7.8-9.4 12-11.2C53.8 10 62.2 18.7 56 32c-6 11.5-24 22-24 22z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 2">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="1"
+                aria-label="Mở viên socola 2"
+              >
+                <span class="choco__art" aria-hidden="true">🍓</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 3">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="2"
+                aria-label="Mở viên socola 3"
+              >
+                <span class="choco__art" aria-hidden="true">🍫</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 4">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="3"
+                aria-label="Mở viên socola 4"
+              >
+                <span class="choco__art" aria-hidden="true">🌹</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 5">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="4"
+                aria-label="Mở viên socola 5"
+              >
+                <span class="choco__art" aria-hidden="true">💝</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 6">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="5"
+                aria-label="Mở viên socola 6"
+              >
+                <span class="choco__art" aria-hidden="true">✨</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 7">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="6"
+                aria-label="Mở viên socola 7"
+              >
+                <span class="choco__art" aria-hidden="true">🍪</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 8">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="7"
+                aria-label="Mở viên socola 8"
+              >
+                <span class="choco__art" aria-hidden="true">🎁</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div class="choco__cell" role="listitem" aria-label="Viên socola 9">
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="8"
+                aria-label="Mở viên socola 9"
+              >
+                <span class="choco__art" aria-hidden="true">💗</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div
+              class="choco__cell"
+              role="listitem"
+              aria-label="Viên socola 10"
+            >
+              <button
+                class="choco__piece"
+                type="button"
+                data-choco="9"
+                aria-label="Mở viên socola 10"
+              >
+                <span class="choco__art" aria-hidden="true">🍬</span>
+                <span class="choco__shine" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+
+          <p class="hint" aria-hidden="true">Scroll xuống để chơi tiếp ↓</p>
+        </div>
+      </section>
+
+      <!-- Section 2: Do you love me? -->
+      <section
+        id="section-2"
+        class="panel panel--love"
+        aria-label="Do you love me"
+      >
+        <div class="center">
+          <h2 id="loveQuestion" class="question" aria-live="polite">
+            Do you love me?
+          </h2>
+          <p id="loveSub" class="subtitle">Chọn thật lòng nha.</p>
+
+          <div class="buttons" role="group" aria-label="Nút YES và NO">
+            <button
+              id="yesBtn"
+              class="btn btn--yes"
+              type="button"
+              aria-label="YES"
+            >
+              YES
+            </button>
+            <button
+              id="noBtn"
+              class="btn btn--no"
+              type="button"
+              aria-label="NO"
+            >
+              NO
+            </button>
+          </div>
+
+          <div id="loveAfter" class="after" hidden>
+            <img
+              id="loveGif"
+              class="after__gif"
+              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTd0eTl2czlyem10eDB6aDhwNHZjejl0dDM4cTc2eDYyeHNpZjdvMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/400IbOQGqOWQgTLCvx/giphy.gif"
+              alt="Heart animation"
+              loading="lazy"
+              decoding="async"
+            />
+            <button
+              id="shareBtn"
+              class="btn btn--ghost"
+              type="button"
+              aria-label="Copy share text"
+            >
+              Share
+            </button>
+          </div>
+
+          <p id="a11yLive" class="sr" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <!-- Section 3: Rigged wheel -->
+      <section
+        id="section-3"
+        class="panel panel--wheel"
+        aria-label="Vòng quay may mắn"
+      >
+        <header class="panel__header">
+          <p class="badge">Lucky Spin</p>
+          <h2 class="title">Vòng quay may mắn</h2>
+          <p class="subtitle">Quay thử xem trúng gì nè…</p>
+        </header>
+
+        <div class="wheel">
+          <div class="wheel__stage" aria-label="Vòng quay 5 ô" role="img">
+            <div class="wheel__pointer" aria-hidden="true"></div>
+            <div id="wheelDisc" class="wheel__disc" aria-hidden="true">
+              <svg
+                viewBox="0 0 200 200"
+                class="wheel__svg"
+                focusable="false"
+                aria-hidden="true"
+              >
+                <defs>
+                  <radialGradient id="wGlow" cx="50%" cy="35%" r="70%">
+                    <stop
+                      offset="0%"
+                      stop-color="#ffffff"
+                      stop-opacity="0.65"
+                    />
+                    <stop
+                      offset="60%"
+                      stop-color="#ffffff"
+                      stop-opacity="0.08"
+                    />
+                    <stop
+                      offset="100%"
+                      stop-color="#000000"
+                      stop-opacity="0.08"
+                    />
+                  </radialGradient>
+                </defs>
+
+                <g id="sectors">
+                  <path
+                    d="M100 100 L100 0 A100 100 0 0 1 195.11 69.1 Z"
+                    fill="#FF7FA3"
+                  />
+                  <path
+                    d="M100 100 L195.11 69.1 A100 100 0 0 1 158.78 180.9 Z"
+                    fill="#FFD9A6"
+                  />
+                  <path
+                    d="M100 100 L158.78 180.9 A100 100 0 0 1 41.22 180.9 Z"
+                    fill="#E63946"
+                  />
+                  <path
+                    d="M100 100 L41.22 180.9 A100 100 0 0 1 4.89 69.1 Z"
+                    fill="#FF7FA3"
+                  />
+                  <path
+                    d="M100 100 L4.89 69.1 A100 100 0 0 1 100 0 Z"
+                    fill="#FFD9A6"
+                  />
+                </g>
+
+                <circle cx="100" cy="100" r="98" fill="url(#wGlow)" />
+                <circle cx="100" cy="100" r="12" fill="#fff" opacity="0.85" />
+
+                <!-- labels (kept short; full label is announced in modal) -->
+                <g
+                  font-family="Poppins, ui-sans-serif, system-ui"
+                  font-weight="700"
+                  font-size="12"
+                  fill="#1f0a12"
+                >
+                  <text x="134" y="32" text-anchor="middle">Ô tô</text>
+                  <text x="172" y="120" text-anchor="middle">Xe cút kít</text>
+                  <text x="100" y="184" text-anchor="middle" fill="#fff">
+                    Túi sách
+                  </text>
+                  <text x="28" y="120" text-anchor="middle">iPhone19</text>
+                  <text x="66" y="32" text-anchor="middle">Căn nhà</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <button
+            id="spinBtn"
+            class="btn btn--spin"
+            type="button"
+            aria-label="Quay vòng quay"
+          >
+            Spin / Quay
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chocolate modal -->
+    <div
+      id="chocoModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="chocoTitle"
+      hidden
+    >
+      <div class="modal__backdrop" data-close="true"></div>
+      <div class="modal__card" role="document">
+        <div class="modal__top">
+          <h3 id="chocoTitle" class="modal__title">Lời chúc</h3>
+          <button
+            id="chocoClose"
+            class="iconbtn"
+            type="button"
+            aria-label="Đóng"
+          >
+            ×
+          </button>
+        </div>
+
+        <p id="chocoMsg" class="modal__msg"></p>
+        <img
+          id="chocoGif"
+          class="modal__gif"
+          alt="Valentine loop"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </div>
+
+    <!-- Prize modal -->
+    <div
+      id="prizeModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="prizeTitle"
+      hidden
+    >
+      <div class="modal__backdrop" data-close="true"></div>
+      <div class="modal__card" role="document">
+        <div class="modal__top">
+          <h3 id="prizeTitle" class="modal__title">Chúc mừng!</h3>
+          <button
+            id="prizeClose"
+            class="iconbtn"
+            type="button"
+            aria-label="Đóng"
+          >
+            ×
+          </button>
+        </div>
+        <div class="prize">
+          <img
+            src="assets/bag.svg"
+            alt="Túi sách"
+            class="prize__img"
+            loading="lazy"
+            decoding="async"
+          />
+          <p class="modal__msg">E iu đã trúng: <strong>Túi sách</strong> 🎀</p>
+        </div>
+        <div class="modal__actions">
+          <button
+            id="claimBtn"
+            class="btn btn--yes"
+            type="button"
+            aria-label="Claim"
+          >
+            Claim
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
