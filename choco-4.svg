@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Cute gift loop">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6EC"/>
+      <stop offset="1" stop-color="#FFE2EC"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .up { transform-origin: 320px 210px; animation: up 1.6s ease-in-out infinite; }
+    @keyframes up { 0%,100%{transform:translateY(6px)} 50%{transform:translateY(-10px)} }
+    .bow { transform-origin: 320px 150px; animation: bow 1.2s ease-in-out infinite; }
+    @keyframes bow { 0%,100%{transform:rotate(-6deg)} 50%{transform:rotate(6deg)} }
+  </style>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g class="up">
+    <rect x="238" y="140" width="164" height="164" rx="22" fill="#E63946"/>
+    <rect x="308" y="140" width="24" height="164" fill="#FFD9A6" opacity=".95"/>
+    <rect x="238" y="204" width="164" height="24" fill="#FFD9A6" opacity=".95"/>
+    <g class="bow">
+      <path d="M320 124c-26-26-58-22-72-6 14 20 46 28 72 6z" fill="#FF7FA3"/>
+      <path d="M320 124c26-26 58-22 72-6-14 20-46 28-72 6z" fill="#FF7FA3"/>
+      <circle cx="320" cy="130" r="10" fill="#FFD9A6"/>
+    </g>
+  </g>
+</svg>

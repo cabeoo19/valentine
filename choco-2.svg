@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Cute chocolate loop">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6EC"/>
+      <stop offset="1" stop-color="#FFF0F7"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .t { transform-origin: 320px 190px; animation: t 1.7s ease-in-out infinite; }
+    @keyframes t { 0%,100%{transform:rotate(-2deg) scale(.98)} 50%{transform:rotate(2deg) scale(1.02)} }
+    .dr { animation: dr 1.2s ease-in-out infinite; }
+    @keyframes dr { 0%,100%{transform:translateY(0)} 50%{transform:translateY(10px)} }
+  </style>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g class="t">
+    <rect x="210" y="92" width="220" height="220" rx="22" fill="#4B1B1F"/>
+    <path d="M210 140h220M210 196h220M210 252h220" stroke="#5D2428" stroke-width="8" opacity=".8"/>
+    <path d="M282 92v220M358 92v220" stroke="#5D2428" stroke-width="8" opacity=".8"/>
+    <g class="dr">
+      <path d="M320 94c-12 24-16 52 0 76 16-24 12-52 0-76z" fill="#FFD9A6" opacity=".9"/>
+      <circle cx="320" cy="182" r="10" fill="#FF7FA3" opacity=".85"/>
+    </g>
+  </g>
+</svg>

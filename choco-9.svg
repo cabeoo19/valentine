@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Cute candy loop">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0F7"/>
+      <stop offset="1" stop-color="#FFF6EC"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .roll{transform-origin:320px 190px;animation:roll 2.2s ease-in-out infinite}
+    @keyframes roll{0%,100%{transform:rotate(-6deg) translateY(4px)}50%{transform:rotate(6deg) translateY(-10px)}}
+    .sw{animation:sw 1.2s ease-in-out infinite}
+    @keyframes sw{0%,100%{opacity:.65}50%{opacity:1}}
+  </style>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g class="roll">
+    <rect x="260" y="146" width="120" height="88" rx="28" fill="#FFD9A6"/>
+    <path d="M260 190c-34-18-50-40-44-58 18 8 38 22 52 44" fill="#FF7FA3" opacity=".9"/>
+    <path d="M380 190c34-18 50-40 44-58-18 8-38 22-52 44" fill="#E63946" opacity=".9"/>
+    <circle cx="320" cy="190" r="26" fill="#FF7FA3"/>
+    <circle class="sw" cx="320" cy="190" r="10" fill="#FFFFFF" opacity=".8"/>
+  </g>
+</svg>
